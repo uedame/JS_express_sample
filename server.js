@@ -1,3 +1,14 @@
+// ★require と import の違い
+// 簡単にいうと、nodeモジュールの読み込み形式の違い。
+// require　は 「CommonJS」 形式によるモジュールの読み込み方法。
+// import は 「ECMAScript」 形式によるモジュールの読み込み方法。
+// importによるモジュール読み込みが定義されたのは ES2015(ES6) から。
+// このため、import形式の方が新しい読み込み方法となる。
+// GitHub で node.js のコードを眺めていると、「ESM」とか
+// 「ESModule」という略語を目にすることがある。
+// これは「ECMAScript Module」の略称を指す。
+
+// import {express} from express;//こっちは使えね
 const express = require("express");
 const app = express();
 const PORT = 3003;
